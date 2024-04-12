@@ -27,7 +27,7 @@ from math import gcd
 # Function to find the modular multiplicative inverse of a number
 def inverse(a, m):
     g = gcd(a, m)
-    if g = 1:
+    if g == 1:
         return None
     else:
         return (a ** (m-2)) % m
@@ -47,7 +47,7 @@ def discrete_logarithm(a, b, m):
     n = m-1
     x = 1
     y = 1
-    while y = 0:
+    while y == 0:
         q = a ** (n // 2)
         x = (x * inverse(y, n)) % n
         y = (y ** 2) % n
